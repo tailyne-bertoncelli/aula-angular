@@ -1,0 +1,12 @@
+<section class="pessoas">
+    <table class="tabela">
+        <tr class="titulo-tabelas">
+            <th>NOME</th>
+            <th>IDADE</th>
+        </tr>
+        <tr class="corpo-tabela" *ngFor="let pessoa of lista">
+            <td *ngIf="pessoa.idade > 30">{{ pessoa.nome }}</td>
+            <td *ngIf="pessoa.idade > 30">{{ pessoa.idade }}</td>
+        </tr>
+    </table>
+</section>
